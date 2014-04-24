@@ -6,33 +6,9 @@
         </Inchoo_Search>
     </modules>
     <global>
-        <inchoo_search_fulltext>
-            <model>catalogsearch/fulltext</model>
-        </inchoo_search_fulltext>
-        <models>
-            <inchoo_search>
-                <class>Mage_CatalogSearch_Model</class>
-                <resourceModel>catalogsearch_resource</resourceModel>
-            </inchoo_search>
-            <inchoo_search_resource>
-                <class>Mage_CatalogSearch_Model_Resource</class>
-                <deprecatedNode>catalogsearch_mysql4</deprecatedNode>
-                <entities>
-                    <search_query>
-                        <table>catalogsearch_query</table>
-                    </search_query>
-                    <result>
-                        <table>catalogsearch_result</table>
-                    </result>
-                    <fulltext>
-                        <table>catalogsearch_fulltext</table>
-                    </fulltext>
-                </entities>
-            </inchoo_search_resource>
-        </models>
         <helpers>
             <inchoo_search>
-                <class>Mage_CatalogSearch_Helper</class>
+                <class>Inchoo_Search_Helper</class>
             </inchoo_search>
         </helpers>
         <blocks>
@@ -40,13 +16,6 @@
                 <class>Inchoo_Search_Block</class>
             </inchoo_search>
         </blocks>
-        <index>
-            <indexer>
-                <inchoo_search_fulltext>
-                    <model>catalogsearch/indexer_fulltext</model>
-                </inchoo_search_fulltext>
-            </indexer>
-        </index>
     </global>
     <frontend>
         <routers>
